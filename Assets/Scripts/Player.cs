@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     private float jumpingPower = 10f;
     private bool isFacingRight = true;
 
+    private float coyoteTime = 0.2f; //stop double jump
+    private float coyoteTimeCounter;
+
     //WALL SLIDING 
     private bool isWallSliding;
     private float wallSlidingSpped = 2f;
@@ -20,6 +23,8 @@ public class Player : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
+    
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundChecker;
@@ -41,6 +46,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal"); //move
+        if (IsGrounded())
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
@@ -64,8 +77,11 @@ public class Player : MonoBehaviour
     }
 
     private void FixedUpdate()
-    {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    {   if (!isWallJumping)
+        {
+          rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
+        
     }
 
     private bool IsGrounded() //jump

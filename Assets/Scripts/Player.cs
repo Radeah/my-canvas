@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     private float horizontal;
-    private float speed = 0f;
-    private float jumpingPower = 10f;
+    private float speed = 200f;
+    private float jumpingPower = 5f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -21,11 +21,12 @@ public class Player : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // MOVMENT SCRIP
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        horizontal = Input.GetAxisRaw("Horizontal"); //move
+
+        if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
       {
           isFacingRight = !isFacingRight;
           Vector3 localScale = transform.localScale;
+          localScale.x *= -1f;
           transform.localScale = localScale;
       }
         

@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(8f, 8f);
+    private Vector2 wallJumpingPower = new Vector2(5f, 5f);
 
     
 
@@ -35,8 +35,6 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask WallLayer;
 
     //stop infinite jump
-    private float coyoteTime = 0.2f;
-    private float coyoteTimeCounter;
     private float jumpBufferingTime = 0.2f;
     private float jumpBufferingCounter;
 

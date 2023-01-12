@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     //JUMP AND MOVMENT 
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 10f;
+    private float jumpingPower = 5f;
     private bool isFacingRight = true;
 
     private float coyoteTime = 0.2f; //stop double jump
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+    private Vector2 wallJumpingPower = new Vector2(8f, 8f);
 
     
 
@@ -34,17 +34,28 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform WallChecker;
     [SerializeField] private LayerMask WallLayer;
 
+    //stop infinite jump
+    private float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
+    private float jumpBufferingTime = 0.2f;
+    private float jumpBufferingCounter;
+
 
 
 
     void Start()
     {
-
+        jumpBufferingCounter = -0.1f;
     }
 
     // MOVMENT SCRIP
     void Update()
     {
+        if (jumpBufferingCounter > 0)
+        {
+            jumpBufferingCounter = jumpBufferingCounter - Time.deltaTime;
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal"); //move
         if (IsGrounded())
         {
@@ -57,12 +68,20 @@ public class Player : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) 
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+            if (jumpBufferingCounter < 0f) //jump
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+                jumpBufferingCounter = jumpBufferingTime;
+            }
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) //jump
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+            coyoteTimeCounter = 0f;
         }
 
         WallSlide();
@@ -86,7 +105,7 @@ public class Player : MonoBehaviour
 
     private bool IsGrounded() //jump
     {
-        return Physics2D.OverlapCircle(GroundChecker.position, 0.2f, GroundLayer); //jump
+        return Physics2D.OverlapCircle(GroundChecker.position, 0.01f, GroundLayer); //jump
     }
         
     private bool isWalled() //wall
@@ -106,7 +125,7 @@ public class Player : MonoBehaviour
             isWallSliding = false;
        }
     }
-       private void WallJump()
+       private void WallJump() //wall 
        {
          if (isWallSliding)
          {
@@ -148,7 +167,7 @@ public class Player : MonoBehaviour
 
     private void Flip()
     {
-      if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+      if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) //walking
       {
           isFacingRight = !isFacingRight;
           Vector3 localScale = transform.localScale;

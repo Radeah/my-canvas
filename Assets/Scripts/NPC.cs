@@ -14,7 +14,7 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool PlayerIsClose;
 
-    public GameObject prompt; 
+    public GameObject prompt;
    
     void Update()
     {

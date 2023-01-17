@@ -14,9 +14,20 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool PlayerIsClose;
 
+    public GameObject prompt; 
    
     void Update()
     {
+
+        if (PlayerIsClose)
+        {
+            prompt.SetActive(true);
+        }
+        else
+        {
+            prompt.SetActive(false);
+        }
+
         if(Input.GetKeyDown(KeyCode.E) && PlayerIsClose)
         {
             if (dialoguePanel.activeInHierarchy)
@@ -82,7 +93,7 @@ public class NPC : MonoBehaviour
 
     }
 
-    private void OnTriggerExist2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -93,6 +104,8 @@ public class NPC : MonoBehaviour
     }
 
 
+    
+    
 
 
 
@@ -118,7 +131,7 @@ public class NPC : MonoBehaviour
 
 
 
-}
+    }
 
 
 

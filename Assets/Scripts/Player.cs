@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     //JUMP AND MOVMENT 
     private float horizontal;
-    private float speed = 15f;
-    private float jumpingPower = 10f;
+    private float speed = 140f;
+    private float jumpingPower = 50f;
     private bool isFacingRight = true;
 
     private float coyoteTime = 0.2f; //stop double jump
@@ -15,14 +15,14 @@ public class Player : MonoBehaviour
 
     //WALL SLIDING 
     private bool isWallSliding;
-    private float wallSlidingSpped = 2f;
+    private float wallSlidingSpped = 10f;
 
     private bool isWallJumping;
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.4f;
-    private Vector2 wallJumpingPower = new Vector2(7f, 7f);
+    private float wallJumpingDuration = 0.2f;
+    private Vector2 wallJumpingPower = new Vector2(10f, 10f);
 
     
 
@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
+        //wall jumping
         WallSlide();
         WallJump();
 
@@ -139,7 +140,7 @@ public class Player : MonoBehaviour
          }
          if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
          {
-            isWallJumping = true;
+            isWallJumping = true; 
             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
             wallJumpingCounter = 0f;
 

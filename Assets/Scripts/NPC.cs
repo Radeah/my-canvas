@@ -15,6 +15,7 @@ public class NPC : MonoBehaviour
     public bool PlayerIsClose;
 
     public GameObject prompt;
+
    
     void Update()
     {

@@ -6,17 +6,15 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public Text dialogueText;
-    public string[] dialogue;
-    private int index;
-
-    public GameObject contButton;
-    public float wordSpeed;
     public bool PlayerIsClose;
-
     public GameObject prompt;
+    public Dialogue dialogue;
 
-   
+    public void TriggerDialogue()
+    {
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    }
+
     void Update()
     {
 
@@ -31,57 +29,9 @@ public class NPC : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.E) && PlayerIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
-            {
-                zeroText();
-            }
-            else
-            {
-                dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
-            }
+            dialoguePanel.SetActive(true);
+            TriggerDialogue();
         }
-
-        if(dialogueText.text == dialogue[index])
-        {
-            contButton.SetActive(true);
-        }
-    }
-
-    public void zeroText()
-    {
-        dialogueText.text = "";
-        index = 0;
-        dialoguePanel.SetActive(false);
-    }
-
-    IEnumerator Typing()
-    {
-        foreach(char letter in dialogue[index].ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return new WaitForSeconds(wordSpeed);
-        }
-    }
-
-    public void NextLine()
-    {
-        contButton.SetActive(false);
-
-
-        if(index < dialogue.Length - 1)
-        {
-            index++;
-            dialogueText.text = "";
-            StartCoroutine(Typing());
-        }
-        else
-        {
-            zeroText();
-        }
-
-
-
     }
 
 
@@ -99,40 +49,11 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerIsClose = false;
-            zeroText();
         }
 
     }
 
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
+ }
 
 
 

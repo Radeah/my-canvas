@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour
     void Update()
     {
 
-        if (PlayerIsClose)
+        if (PlayerIsClose && hasPlayed == false)
         {
             prompt.SetActive(true);
             
@@ -30,6 +30,7 @@ public class NPC : MonoBehaviour
         else
         {
             prompt.SetActive(false);
+
         }
 
         

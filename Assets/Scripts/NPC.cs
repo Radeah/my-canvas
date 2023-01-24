@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
-    public GameObject dialoguePanel;
+    //public GameObject dialoguePanel;
     public bool PlayerIsClose;
     public GameObject prompt;
     public Dialogue dialogue;
+    DialogueManager dm;
+    bool hasPlayed = false;
+    bool EndPrompt =true;
 
-    public void TriggerDialogue()
+
+    public void Start()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dm = FindObjectOfType<DialogueManager>();
     }
 
     void Update()
@@ -21,17 +25,23 @@ public class NPC : MonoBehaviour
         if (PlayerIsClose)
         {
             prompt.SetActive(true);
+            
         }
         else
         {
             prompt.SetActive(false);
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && PlayerIsClose)
+        
+
+        if (Input.GetKeyDown(KeyCode.E) && PlayerIsClose && hasPlayed == false)
         {
-            dialoguePanel.SetActive(true);
+            hasPlayed = true;
+       
             TriggerDialogue();
         }
+
+        
     }
 
 
@@ -40,6 +50,7 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerIsClose = true;
+            
         }
 
     }
@@ -53,7 +64,12 @@ public class NPC : MonoBehaviour
 
     }
 
- }
+    public void TriggerDialogue()
+    {
+        dm.StartDialogue(dialogue);
+    }
+
+}
 
 
 

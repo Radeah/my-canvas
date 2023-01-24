@@ -37,58 +37,63 @@ public class Player : MonoBehaviour
     //stop infinite jump
     private float jumpBufferingTime = 0.2f;
     private float jumpBufferingCounter;
-
+    DialogueManager dm;
 
 
 
     void Start()
     {
         jumpBufferingCounter = -0.1f;
+        dm = FindObjectOfType<DialogueManager>();
+
     }
 
     // MOVMENT SCRIP
     void Update()
     {
-        if (jumpBufferingCounter > 0)
+        if (dm.coversation == false) 
         {
-            jumpBufferingCounter = jumpBufferingCounter - Time.deltaTime;
-        }
-
-        horizontal = Input.GetAxisRaw("Horizontal"); //move
-        if (IsGrounded())
-        {
-            coyoteTimeCounter = coyoteTime;
-        }
-        else
-        {
-            coyoteTimeCounter -= Time.deltaTime;
-        }
-
-        if (Input.GetButtonDown("Jump") && IsGrounded()) 
-        {
-
-            if (jumpBufferingCounter < 0f) //jump
+            if (jumpBufferingCounter > 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-
-                jumpBufferingCounter = jumpBufferingTime;
+                jumpBufferingCounter = jumpBufferingCounter - Time.deltaTime;
             }
-        }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) //jump
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            horizontal = Input.GetAxisRaw("Horizontal"); //move
+            if (IsGrounded())
+            {
+                coyoteTimeCounter = coyoteTime;
+            }
+            else
+            {
+                coyoteTimeCounter -= Time.deltaTime;
+            }
 
-            coyoteTimeCounter = 0f;
-        }
+            if (Input.GetButtonDown("Jump") && IsGrounded())
+            {
 
-        //wall jumping
-        WallSlide();
-        WallJump();
+                if (jumpBufferingCounter < 0f) //jump
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
 
-        if (!isWallJumping)
-        {
-            Flip();
+                    jumpBufferingCounter = jumpBufferingTime;
+                }
+            }
+
+            if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) //jump
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+
+                coyoteTimeCounter = 0f;
+            }
+
+            //wall jumping
+            WallSlide();
+            WallJump();
+
+            if (!isWallJumping)
+            {
+                Flip();
+            }
         }
 
         

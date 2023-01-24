@@ -7,6 +7,8 @@ using UnityEngine.UI;
 {
     public Text NPCName;
     public Text DialogueText;
+    public GameObject dialoguePanel;
+    public bool coversation = false;
 
     public Queue<string> sentences;
     void Start() {
@@ -14,7 +16,12 @@ using UnityEngine.UI;
     }
 
     public void StartDialogue (Dialogue dialogue)
+
     {
+        coversation = true;
+
+        dialoguePanel.SetActive(true);
+
         Debug.Log("Starting coverssation with " + dialogue.name);
 
         NPCName.text = dialogue.name;
@@ -27,6 +34,8 @@ using UnityEngine.UI;
         }
 
         DisplayNextSentence();
+
+
     }  
      public void DisplayNextSentence ()
     {
@@ -43,9 +52,21 @@ using UnityEngine.UI;
 
     void EndDialogue()
     {
+        coversation = false;
+
+        dialoguePanel.SetActive(false);
+
         Debug.Log("End of conversation");
     }
 
-    
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            //    dialoguePanel.SetActive(true);
+            DisplayNextSentence();
+        }
+    }
 
 }

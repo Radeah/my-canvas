@@ -64,7 +64,6 @@ using UnityEngine.UI;
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            //    dialoguePanel.SetActive(true);
             DisplayNextSentence();
         }
     }

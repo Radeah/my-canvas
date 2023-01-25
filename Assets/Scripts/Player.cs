@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     //JUMP AND MOVMENT 
     private float horizontal;
     private float speed = 120f;
-    private float jumpingPower = 50f;
+    private float jumpingPower = 75f;
     private bool isFacingRight = true;
 
     private float coyoteTime = 0.2f; //stop double jump
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.2f;
-    private Vector2 wallJumpingPower = new Vector2(100f, 100f);
+    private Vector2 wallJumpingPower = new Vector2(85f, 85f);
 
     
 

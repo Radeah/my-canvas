@@ -8,11 +8,19 @@ using UnityEngine.UI;
     public Text NPCName;
     public Text DialogueText;
     public GameObject dialoguePanel;
+    public GameObject[] multiChoices;
     public bool coversation = false;
+
+    public Dialogue multiChoice0Option1;
+    public Dialogue multiChoice0Option2;
+    public Dialogue multiChoice1Option1;
+    public Dialogue multiChoice1Option2;
 
     public Queue<string> sentences;
     void Start() {
         sentences = new Queue<string>();
+
+        Debug.Log(multiChoices[0]);
     }
 
     public void StartDialogue (Dialogue dialogue)
@@ -47,7 +55,24 @@ using UnityEngine.UI;
         }
 
         string sentence = sentences.Dequeue();
-        DialogueText.text = sentence;
+
+        if (sentence.Contains("MULTICHOICE0"))
+        {
+            sentences.Clear();
+            dialoguePanel.SetActive(false);
+            multiChoices[0].SetActive(true);
+        }
+        if (sentence.Contains("MULTICHOICE1"))
+        {
+            sentences.Clear();
+            dialoguePanel.SetActive(false);
+            multiChoices[1].SetActive(true);
+        }
+        else
+        {
+            DialogueText.text = sentence; 
+        }
+        
     }
 
     void EndDialogue()
@@ -68,4 +93,27 @@ using UnityEngine.UI;
         }
     }
 
+    public void MultiChoice0Option1()
+    {
+        multiChoices[1].SetActive(false);
+        StartDialogue(multiChoice0Option1);
+    }
+
+    public void MultiChoice0Option2()
+    {
+        multiChoices[1].SetActive(false);
+        StartDialogue(multiChoice0Option2);
+    }
+
+    public void MultiChoice1Option1()
+    {
+        multiChoices[0].SetActive(false);
+        StartDialogue(multiChoice1Option1);
+    }
+
+    public void MultiChoice1Option2()
+    {
+        multiChoices[0].SetActive(false);
+        StartDialogue(multiChoice1Option2);
+    }
 }

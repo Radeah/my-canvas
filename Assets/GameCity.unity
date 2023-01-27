@@ -2227,7 +2227,8 @@ MonoBehaviour:
   dialogue:
     name: Jamal
     sentences:
-    - im a zesity man
+    - 'Heyy sweet heart what are you doing around here '
+    - 'that doesnt matter '
     - yaayayayayayyayayayayayayayayayr
     - MULTICHOICE0
 --- !u!61 &1460627282

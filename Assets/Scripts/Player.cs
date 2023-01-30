@@ -15,14 +15,14 @@ public class Player : MonoBehaviour
 
     //WALL SLIDING 
     private bool isWallSliding;
-    private float wallSlidingSpped = 90f;
+    private float wallSlidingSpped = 85f;
 
     private bool isWallJumping;
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.2f;
-    private Vector2 wallJumpingPower = new Vector2(200f, 200f);
+    private Vector2 wallJumpingPower = new Vector2(55f, 55f);
 
     
 

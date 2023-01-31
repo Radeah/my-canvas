@@ -204,7 +204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is ur jounery young one
+  m_Text: 'who am i '
 --- !u!222 &1055287724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Who are you who am i '
+  m_Text: what im i doing
 --- !u!222 &1158030268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BEGAN NOW GO
+  m_Text: 'arggggh how how will i do this '
 --- !u!222 &1472145240
 CanvasRenderer:
   m_ObjectHideFlags: 0

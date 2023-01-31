@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     private float jumpBufferingCounter;
     DialogueManager dm;
 
-
+    public float y_power_scale;
 
     void Start()
     {
@@ -145,8 +145,8 @@ public class Player : MonoBehaviour
          }
          if (Input.GetButtonDown("Jump") && wallJumpingCounter > 0f)
          {
-            isWallJumping = true; 
-            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+            isWallJumping = true;
+            rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y * y_power_scale);
             wallJumpingCounter = 0f;
 
             if (transform.localScale.x != wallJumpingDirection)

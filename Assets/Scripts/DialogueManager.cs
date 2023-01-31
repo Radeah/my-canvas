@@ -17,15 +17,22 @@ using UnityEngine.UI;
     public Dialogue multiChoice1Option2;
 
     public Queue<string> sentences;
+
+    public string item_to_give;
+
     void Start() {
         sentences = new Queue<string>();
 
         Debug.Log(multiChoices[0]);
     }
 
-    public void StartDialogue (Dialogue dialogue)
-
+    public void StartDialogue (Dialogue dialogue, string chosen_item)
     {
+        if (chosen_item != "na")
+        {
+            item_to_give = chosen_item;
+        }
+
         coversation = true;
 
         dialoguePanel.SetActive(true);
@@ -96,24 +103,27 @@ using UnityEngine.UI;
     public void MultiChoice0Option1()
     {
         multiChoices[1].SetActive(false);
-        StartDialogue(multiChoice0Option1);
+        if (item_to_give == "paint") { Inventory.has_blue_paint = true; }
+        StartDialogue(multiChoice0Option1, "na");
     }
 
     public void MultiChoice0Option2()
     {
         multiChoices[1].SetActive(false);
-        StartDialogue(multiChoice0Option2);
+        if (item_to_give == "paint") { Inventory.has_red_paint = true; }
+        StartDialogue(multiChoice0Option2, "na");
     }
 
     public void MultiChoice1Option1()
     {
         multiChoices[0].SetActive(false);
-        StartDialogue(multiChoice1Option1);
+        if (item_to_give == "spraycan") { Inventory.has_spraycan = true; }
+        StartDialogue(multiChoice1Option1, "na");
     }
 
     public void MultiChoice1Option2()
     {
         multiChoices[0].SetActive(false);
-        StartDialogue(multiChoice1Option2);
+        StartDialogue(multiChoice1Option2, "na");
     }
 }

@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     bool hasPlayed = false;
     bool EndPrompt =true;
 
+    public string item_to_give;
 
     public void Start()
     {
@@ -40,8 +41,9 @@ public class NPC : MonoBehaviour
             hasPlayed = true;
        
             TriggerDialogue();
-        }
 
+
+        }
         
     }
 
@@ -67,7 +69,7 @@ public class NPC : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        dm.StartDialogue(dialogue);
+        dm.StartDialogue(dialogue, item_to_give);
     }
 
 }

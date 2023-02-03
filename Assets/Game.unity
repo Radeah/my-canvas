@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 3652651}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6187789, y: 3.0267553, z: 0.37544423}
+  m_LocalScale: {x: 0.9153384, y: 4.477375, z: 0.5553818}
   m_Children: []
   m_Father: {fileID: 720172410}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1414, y: -449}
+  m_AnchoredPosition: {x: -1430, y: -494}
   m_SizeDelta: {x: 553.62, y: 118.914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3652653
@@ -181,13 +181,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a150303e52ec4e44d854310c46d47dd6, type: 3}
     m_FontSize: 100
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 0
+    m_MaxSize: 300
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -541,12 +541,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_Font: {fileID: 12800000, guid: a150303e52ec4e44d854310c46d47dd6, type: 3}
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 111
+    m_MaxSize: 200
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -726,7 +726,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 00d4e09c335e1de43a7dd24456a5a522, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -860,7 +860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1433, y: 439.97775}
+  m_AnchoredPosition: {x: -1422, y: 375}
   m_SizeDelta: {x: 100, y: 78.757}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321257244
@@ -1086,7 +1086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406904035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9641, y: 542, z: 27.478}
+  m_LocalPosition: {x: -9664, y: 542, z: 27.478}
   m_LocalScale: {x: 58.383484, y: 365.01715, z: 58.383484}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1296,7 +1296,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 211.67395
+  orthographic size: 349.65607
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1320,11 +1320,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.37999, y: 5.3499994, z: -10}
-  m_LocalScale: {x: 1.7102797, y: 3.4778337, z: 1.425233}
+  m_LocalPosition: {x: -0.39, y: 5.75, z: -10}
+  m_LocalScale: {x: 3.4543078, y: 7.024294, z: 2.8785894}
   m_Children: []
   m_Father: {fileID: 2011013388}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &532489509
 GameObject:
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0.83137256, g: 0.015686275, b: 0.49019608, a: 0.28235295}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2194,14 +2194,14 @@ RectTransform:
   m_GameObject: {fileID: 821735296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8649049, y: 0.7699344, z: 1.5249082}
+  m_LocalScale: {x: 0.40169838, y: 0.35759008, z: 0.7082318}
   m_Children: []
   m_Father: {fileID: 1460627284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.9, y: 6.62}
+  m_AnchoredPosition: {x: -4.88, y: 5.14}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &886362308
@@ -2280,7 +2280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886362308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2945, y: -271, z: 2639}
+  m_LocalPosition: {x: 2827, y: -271, z: 2639}
   m_LocalScale: {x: 72.8826, y: 81.58538, z: 0.8764699}
   m_Children: []
   m_Father: {fileID: 95757289}
@@ -2726,7 +2726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136038710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9336, y: 357, z: 24.699}
+  m_LocalPosition: {x: -9336, y: 332, z: 24.699}
   m_LocalScale: {x: -1892.3595, y: 61.7361, z: 0.15839462}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2941,28 +2941,40 @@ MonoBehaviour:
   dialogue:
     name: Francis
     sentences:
-    - Hey, there sweetheart is all good?
-    - You look down
-    - is all good?
-    - Things could be better, I guess
-    - "*sigh* I know how you feel. Sometimes, things get so hectic and overwhelming,
-      and you feel lost and confused, not knowing what to do. It\u2019s alright to
-      take a step back sometimes."
-    - "Yeah. That was pretty specific though..?\r"
+    - Hey, there kiddo. You look down; is all good?
+    - "I know how you feel. Sometimes, things get so hectic and overwhelming, and
+      you feel lost and confused, not knowing what to do. It\u2019s alright to take
+      a step back sometimes.\r"
     - "Let\u2019s just say \u2018been there, done that\u2019! Things need to get
-      worse before they get better."
-    - Right...
-    - ' Who are you, by the way?'
-    - "I am Your friendly local record seller. You can always come by here if you
-      need anything. I\u2019ve been told that I am quite the helping hand despite
-      being a bit detached to things."
-    - 
-    - "No problem kiddo. I know a place that may be more fitting for you; why don\u2019t
-      you check it out?\r\n\r\nIt\u2019s just down the street \n"
-    - 'Heres a little something from me. '
+      worse before they get better. "
+    - "I\u2019m Francis. Your friendly local record seller. You can always come by
+      here if you need anything. I\u2019ve been told that I am quite the helping
+      hand, despite being told I\u2019m a bit detached to things.\r"
+    - "Oh- yeah, but it\u2019s reasonable. Had some rough adolescent years. I was
+      a very rebellious and hard-headed kid, and it was a sort of a coping method
+      for me; trying to run away from everything instead of facing my problems head
+      on.\r"
+    - " It was even worse, being confused and insecure about my identity, pretending
+      all was normal and that I could just ignore it. *looks away*\r"
+    - "I couldn\u2019t. Nothing was normal - as I shut myself out, I\u2019d also
+      push people away. No one tried to stay though, or jump that rift. After time
+      you become numb, numb to the odd looks people send your way, numb to all the
+      people that leave.\r"
+    - " It gets too easy to not get attached to people that you know aren\u2019t
+      going to try to stay. To almost anyone really.\r"
+    - "It\u2019s no big deal. Though I do think sometimes if things could\u2019ve
+      gone differently, if they could\u2019ve stayed... It\u2019s useless to think
+      about it now though.\r\n\n"
+    - "\u2026 You.. have a point. I can try. Thanks. Here, take this little memo.
+      I found I don\u2019t need it anymore.\r\nBut you might.\r"
+    - 'Sometimes, you can express yourself through art better than words. '
     - MULTICHOICE0
     - 
-    - "Bye now!\r"
+    - "No problem kiddo. I know a place that may be more fitting for you; why don\u2019t
+      you check it out?"
+    - "It\u2019s just down the street - a skate park. You will know when you see
+      it.\r"
+    - Looking forward to it.
   item_to_give: spraycan
 --- !u!61 &1460627282
 BoxCollider2D:
@@ -3049,8 +3061,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460627280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8806, y: 485.65, z: 24.699}
-  m_LocalScale: {x: 20.732029, y: 19.364035, z: 0.39299002}
+  m_LocalPosition: {x: -8959, y: 503.84, z: 24.699}
+  m_LocalScale: {x: 25.106321, y: 25.926863, z: 0.44568998}
   m_Children:
   - {fileID: 821735301}
   m_Father: {fileID: 0}
@@ -3261,7 +3273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489056178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7911, y: 357, z: 24.699}
+  m_LocalPosition: {x: -7911, y: 332, z: 24.699}
   m_LocalScale: {x: -1501.232, y: 61.7361, z: 0.15839462}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3448,7 +3460,7 @@ MonoBehaviour:
     name: Julio
     sentences:
     - "Ow\u2026I think I broke something."
-    - '*cheery, friendly* Oh, hi! You new around here?'
+    - Oh, hi! You new around here?
     - "A little, I moved here to do an art course but it\u2019s\u2026nevermind"
     - " I\u2019ve been here a couple months but I\u2019ve never seen this before.
       What do you do here?"
@@ -3457,8 +3469,8 @@ MonoBehaviour:
       for you too.
 
 '
-    - "*smile* Thanks. I think this place and I were meant to be - I mean, I\u2019m
-      already on a skateboard. Ticked 1 out of those 3."
+    - "Thanks. I think this place and I were meant to be - I mean, I\u2019m already
+      on a skateboard. Ticked 1 out of those 3."
     - "*laugh* I can help you with the last one, but breaking bones I\u2019m not
       too sure about. Follow me."
     - "ALRIGHT! So, we\u2019re here. This is the start of your tagging journey and
@@ -3561,8 +3573,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683211381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7767, y: 465, z: 24.699}
-  m_LocalScale: {x: 18.982935, y: 18.340612, z: 0.37221983}
+  m_LocalPosition: {x: -7837, y: 483, z: 24.699}
+  m_LocalScale: {x: 24.658747, y: 23.824373, z: 0.48351187}
   m_Children:
   - {fileID: 2021514569}
   m_Father: {fileID: 0}
@@ -3596,7 +3608,7 @@ Transform:
   m_LocalScale: {x: 1.1165, y: 1.2700188, z: 1.1165}
   m_Children: []
   m_Father: {fileID: 2011013388}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757621795
 GameObject:
@@ -3955,12 +3967,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011013383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9583, y: 456, z: 35.478}
-  m_LocalScale: {x: 22.842741, y: 22.683422, z: 26.11793}
+  m_LocalPosition: {x: -9587.1, y: 492, z: 57.368}
+  m_LocalScale: {x: 31.335358, y: 30.736301, z: 30.424774}
   m_Children:
   - {fileID: 2051447222}
-  - {fileID: 1720464989}
   - {fileID: 519420032}
+  - {fileID: 1720464989}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4139,14 +4151,14 @@ RectTransform:
   m_GameObject: {fileID: 2021514564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6440213, y: 0.5459602, z: 0.80881786}
+  m_LocalScale: {x: 0.44689345, y: 0.37884775, z: 0.5612476}
   m_Children: []
   m_Father: {fileID: 1683211385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.17, y: 6.88}
+  m_AnchoredPosition: {x: -1.97, y: 5.48}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2051447221

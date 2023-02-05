@@ -9,7 +9,7 @@ public class LadderMovment : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
 
-    [SerializedField] private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +28,7 @@ public class LadderMovment : MonoBehaviour
         if (isClimbing)
         {
           rb.gravityScale = 0f;
-          rb.velocity = new Vector2(rb.velocity,x, verical * speed);
+          rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
         }
         else
         {
@@ -46,7 +46,7 @@ public class LadderMovment : MonoBehaviour
             
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {  
       if (collision.CompareTag("Ladder"))
       {

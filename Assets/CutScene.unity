@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 250043279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -0.99997795, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250043281
@@ -193,12 +193,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'the non-judgemental
+  m_Text: 'I handle the non-judgemental
 
     paintbrush like a wand,
 
-    confidently marking
-    the
+    confidently
+    marking the
 
     world with my signature;
 
@@ -262,8 +262,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "flows through my arm\r\ndown, into my fingers,\r\nairborne for a second,\r\nmaterialising
-    on the\r\nconcrete. I handle \n"
+  m_Text: "My mind flows through my arm\r\ndown, into my fingers,\r\nairborne for
+    a second,\r\nmaterialising on the\r\nconcrete. \n"
 --- !u!222 &963385837
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -281,14 +281,14 @@ RectTransform:
   m_GameObject: {fileID: 963385835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -0.99997795, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &972356464
@@ -403,14 +403,14 @@ RectTransform:
   m_GameObject: {fileID: 1051042504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: 37.308}
+  m_AnchoredPosition: {x: -0.99997795, y: -16.633589}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1055287722
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: With this in my palm,
+  m_Text: In my hand, i grasp a can of
 --- !u!222 &1055287724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -482,14 +482,14 @@ RectTransform:
   m_GameObject: {fileID: 1055287722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -1, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1112462196
@@ -683,7 +683,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Everything,
+  m_Text: 'An electric
+
+    current of creativity
+
+    filling me
+
+'
 --- !u!222 &1158030268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -701,14 +707,14 @@ RectTransform:
   m_GameObject: {fileID: 1158030266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -0.99997795, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1181439114
@@ -828,7 +834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The potential to throw\r\nmy feelings, thoughts,\r\non a wall.  \r\n"
+  m_Text: "The potential to throw\r\nmy feelings, thoughts,\r\non the wall.  \r\n"
 --- !u!222 &1195700531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -846,14 +852,14 @@ RectTransform:
   m_GameObject: {fileID: 1195700529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -0.99997795, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1515732330
@@ -990,7 +996,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "This is \n"
+  m_Text: 'With this in my palm everything is '
 --- !u!222 &1812756453
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1008,13 +1014,140 @@ RectTransform:
   m_GameObject: {fileID: 1812756451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.211231, y: 5.211231, z: 5.211231}
+  m_LocalScale: {x: 1.7516512, y: 1.7516512, z: 1.7516512}
   m_Children: []
   m_Father: {fileID: 1112462200}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5624, y: -17.334}
+  m_AnchoredPosition: {x: -0.99997795, y: -35}
   m_SizeDelta: {x: 672.1103, y: 368.3967}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2089216511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089216513}
+  - component: {fileID: 2089216512}
+  m_Layer: 0
+  m_Name: MyCanvasPoem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2089216512
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089216511}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b1c85be8cf825934aaec81af385a6542, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2089216513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089216511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

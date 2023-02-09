@@ -7,6 +7,7 @@ public class Background : MonoBehaviour
 {
     public GameObject city;
     public GameObject skatePark;
+    public GameObject train;
 
     public int street; 
 
@@ -27,6 +28,7 @@ public class Background : MonoBehaviour
     {
         city.SetActive(false);
         skatePark.SetActive(false);
+        train.SetActive(false);
 
         if (street == 1)
         {
@@ -36,6 +38,12 @@ public class Background : MonoBehaviour
         if (street == 2)
         {
             skatePark.SetActive(true);
+        }
+
+        if (street == 3)
+        {
+           train.SetActive(true);
+           train.SetActive(true);
         }
 
 

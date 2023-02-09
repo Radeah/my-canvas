@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/CutScene.unity
     guid: 9f329940f6bb8eb40903a23c8f5a863c
   - enabled: 1
-    path: Assets/Game.unity
+    path: Assets/City.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/SkatePark.unity
+    guid: c047dc3351b00954c984e17a2de1296f
+  - enabled: 1
+    path: Assets/Train.unity
+    guid: 918e37586db6c244c9b6af89f9dc0eb0
   m_configObjects: {}

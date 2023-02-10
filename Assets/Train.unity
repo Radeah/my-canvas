@@ -438,7 +438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354, y: 145}
+  m_AnchoredPosition: {x: 280, y: 138}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362512928
@@ -510,7 +510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354, y: 145}
+  m_AnchoredPosition: {x: 280, y: 138}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &524429616
@@ -1411,6 +1411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249ccbfad1985409b2cc34df348704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSoundEffect: {fileID: 0}
   rb: {fileID: 994167741}
   GroundChecker: {fileID: 980302898}
   GroundLayer:
@@ -1623,7 +1624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 347.4, y: 140.1}
+  m_AnchoredPosition: {x: 273.4, y: 133.1}
   m_SizeDelta: {x: 78.7198, y: 75.7528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203455763

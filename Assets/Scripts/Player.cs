@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
     //JUMP AND MOVMENT 
     private float horizontal;
     private float speed = 450f;
@@ -23,6 +24,9 @@ public class Player : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.2f;
     private Vector2 wallJumpingPower = new Vector2(40f, 40f);
+
+    //Audio
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     
 
@@ -82,6 +86,7 @@ public class Player : MonoBehaviour
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) //jump
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.2f);
+                jumpSoundEffect.Play();
 
                 coyoteTimeCounter = 0f;
             }
@@ -95,6 +100,7 @@ public class Player : MonoBehaviour
                 Flip();
             }
         }
+
 
         
     }

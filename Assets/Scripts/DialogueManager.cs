@@ -17,9 +17,6 @@ using UnityEngine.UI;
     public Dialogue multiChoice1Option2;
 
 
-
-
-
     public Queue<string> sentences;
 
     public string item_to_give;
@@ -78,12 +75,6 @@ using UnityEngine.UI;
             sentences.Clear();
             dialoguePanel.SetActive(false);
             multiChoices[1].SetActive(true);
-        }
-        if (sentence.Contains("MULTICHOICE2"))
-        {
-            sentences.Clear();
-            dialoguePanel.SetActive(false);
-            multiChoices[2].SetActive(true);
         }
         else
         {

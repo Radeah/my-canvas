@@ -1502,7 +1502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994167736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16948, y: 372.4, z: 57.368}
+  m_LocalPosition: {x: -17136.1, y: 363, z: 57.368}
   m_LocalScale: {x: 31.335358, y: 30.736301, z: 30.424774}
   m_Children:
   - {fileID: 980302898}
@@ -2442,7 +2442,7 @@ Transform:
   m_GameObject: {fileID: 1650019013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16955, y: 502, z: 132}
-  m_LocalScale: {x: 67.69724, y: 60.175323, z: 60.175323}
+  m_LocalScale: {x: 71.92832, y: 60.175323, z: 60.175323}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -2678,14 +2678,14 @@ RectTransform:
   m_GameObject: {fileID: 1783527165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7584139, y: 0.642935, z: 0.95248204}
+  m_LocalScale: {x: 0.5862616, y: 0.49699518, z: 0.7362782}
   m_Children: []
   m_Father: {fileID: 1825979521}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.08, y: 6.95}
+  m_AnchoredPosition: {x: 0.63, y: 1.47}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1794017737
@@ -2898,18 +2898,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.53238076, y: -2.1821775}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.23, y: 10.8}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 4.75, y: 10.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.23, y: 10.8}
+  m_Size: {x: 1.9197584, y: 5.9833794}
   m_EdgeRadius: 0
 --- !u!114 &1825979519
 MonoBehaviour:
@@ -2972,7 +2972,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 34ce92e9440443945ae9fa05459e09fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8544ff426a870847b132a9c2ce8e135, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2991,8 +2991,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825979517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16784, y: 334, z: 24.699}
-  m_LocalScale: {x: 22.876822, y: 20.32436, z: 0.41247973}
+  m_LocalPosition: {x: -16770.9, y: 414.1, z: 24.699}
+  m_LocalScale: {x: 40.206013, y: 37.600067, z: 0.7630875}
   m_Children:
   - {fileID: 1783527170}
   m_Father: {fileID: 0}

@@ -11,12 +11,15 @@ public class Player : MonoBehaviour
     private float jumpingPower = 120f;
     private bool isFacingRight = true;
 
+
     private float coyoteTime = 0.2f; //stop double jump
     private float coyoteTimeCounter;
+
 
     //WALL SLIDING 
     private bool isWallSliding;
     private float wallSlidingSpped = 85f;
+
 
     private bool isWallJumping;
     private float wallJumpingDirection;
@@ -24,11 +27,6 @@ public class Player : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.2f;
     private Vector2 wallJumpingPower = new Vector2(40f, 40f);
-
-    //Audio
-    [SerializeField] private AudioSource jumpSoundEffect;
-
-    
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundChecker;
@@ -86,7 +84,6 @@ public class Player : MonoBehaviour
             if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f) //jump
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.2f);
-                jumpSoundEffect.Play();
 
                 coyoteTimeCounter = 0f;
             }
@@ -184,11 +181,6 @@ public class Player : MonoBehaviour
           localScale.x *= -1f;
           transform.localScale = localScale;
       }
-        
-
-      
-
-
 
     }
 

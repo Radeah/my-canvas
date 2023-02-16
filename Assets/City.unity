@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66778294ddcaf344192143e082861d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.005
+  speed: 0.5
 --- !u!64 &18136531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -307,8 +307,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18136529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20008, y: 684, z: 623.99}
-  m_LocalScale: {x: 1148.224, y: 677.83484, z: 637.90216}
+  m_LocalPosition: {x: -20008, y: 732, z: 623.99}
+  m_LocalScale: {x: 1332.6287, y: 786.69507, z: 740.34924}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 85620740}
   m_Layer: 6
   m_Name: Ground (8)
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,7 +450,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85620739}
   m_LocalRotation: {x: -0, y: -0, z: -0.29815903, w: 0.9545163}
-  m_LocalPosition: {x: -10137, y: 270, z: 24.699}
+  m_LocalPosition: {x: -10137, y: 290, z: 24.699}
   m_LocalScale: {x: -978.15485, y: 47.36096, z: 0.11663388}
   m_Children: []
   m_Father: {fileID: 0}
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66778294ddcaf344192143e082861d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 0.001
 --- !u!64 &406161124
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -879,8 +879,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406161122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20008, y: 684, z: 128.01}
-  m_LocalScale: {x: 1159.7458, y: 684.6366, z: 644.30316}
+  m_LocalPosition: {x: -20001, y: 732, z: 128.01}
+  m_LocalScale: {x: 1346.001, y: 794.5892, z: 747.7782}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -1203,7 +1203,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Red Paint
+  m_Text: 'No item
+
+'
 --- !u!222 &532489512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1434,14 +1436,14 @@ RectTransform:
   m_GameObject: {fileID: 671412063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9114938, y: 0.8114076, z: 1.6070487}
+  m_LocalScale: {x: 0.5241636, y: 0.46660808, z: 0.92414945}
   m_Children: []
   m_Father: {fileID: 1832551146}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.4, y: 3.4}
+  m_AnchoredPosition: {x: 5.68, y: 2.5290217}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &704655066
@@ -1696,7 +1698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797456701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11391, y: 203, z: 0}
+  m_LocalPosition: {x: -11391, y: 223, z: 0}
   m_LocalScale: {x: 69.634, y: 706.437, z: 69.634}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1915,14 +1917,14 @@ RectTransform:
   m_GameObject: {fileID: 821735296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9114938, y: 0.8114076, z: 1.6070487}
+  m_LocalScale: {x: 0.34353226, y: 0.30581084, z: 0.6056795}
   m_Children: []
   m_Father: {fileID: 1460627284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.45, y: 2.85}
+  m_AnchoredPosition: {x: 5.53, y: 1.62}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &961606360
@@ -2047,7 +2049,7 @@ GameObject:
   - component: {fileID: 1003273561}
   - component: {fileID: 1003273560}
   m_Layer: 0
-  m_Name: NPC 1 (1)
+  m_Name: Francis 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2292,7 +2294,7 @@ GameObject:
   - component: {fileID: 1044947272}
   m_Layer: 6
   m_Name: Ground (4)
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2499,7 +2501,7 @@ GameObject:
   - component: {fileID: 1136038714}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2948,7 +2950,7 @@ GameObject:
   - component: {fileID: 1460627281}
   - component: {fileID: 1460627282}
   m_Layer: 0
-  m_Name: NPC 1
+  m_Name: Francis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3232,7 +3234,7 @@ GameObject:
   - component: {fileID: 1609347615}
   m_Layer: 6
   m_Name: Ground (5)
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3380,7 +3382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66778294ddcaf344192143e082861d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.001
+  speed: 0.01
 --- !u!64 &1631399946
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3452,8 +3454,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631399944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20008, y: 684, z: 343.6}
-  m_LocalScale: {x: 1156.587, y: 682.77185, z: 642.54834}
+  m_LocalPosition: {x: -20008, y: 732, z: 343.6}
+  m_LocalScale: {x: 1342.3348, y: 792.425, z: 745.7416}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -3658,14 +3660,14 @@ RectTransform:
   m_GameObject: {fileID: 1788369567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9114938, y: 0.8114076, z: 1.6070487}
+  m_LocalScale: {x: 0.31949583, y: 0.28441373, z: 0.563301}
   m_Children: []
   m_Father: {fileID: 1003273563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.34, y: 2.93}
+  m_AnchoredPosition: {x: 5.587, y: 1.549}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1832551142
@@ -3681,7 +3683,7 @@ GameObject:
   - component: {fileID: 1832551144}
   - component: {fileID: 1832551143}
   m_Layer: 0
-  m_Name: NPC 1 (2)
+  m_Name: Francis 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3987,7 +3989,6 @@ GameObject:
   - component: {fileID: 2011013384}
   - component: {fileID: 2011013385}
   - component: {fileID: 2011013390}
-  - component: {fileID: 2011013389}
   - component: {fileID: 2011013391}
   m_Layer: 6
   m_Name: Player
@@ -4008,7 +4009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8249ccbfad1985409b2cc34df348704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSoundEffect: {fileID: 2011013391}
   rb: {fileID: 2011013386}
   GroundChecker: {fileID: 2051447222}
   GroundLayer:
@@ -4125,7 +4125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011013383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20070, y: 489, z: 57.368}
+  m_LocalPosition: {x: -20116, y: 489, z: 57.368}
   m_LocalScale: {x: 31.335358, y: 30.736301, z: 30.424774}
   m_Children:
   - {fileID: 2051447222}
@@ -4134,19 +4134,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2011013389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011013383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f044cdd65956134fb43a191e83c7602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2011013386}
 --- !u!95 &2011013390
 Animator:
   serializedVersion: 3
@@ -4347,7 +4334,7 @@ GameObject:
   - component: {fileID: 2050597072}
   m_Layer: 6
   m_Name: Ground (7)
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4456,7 +4443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050597071}
   m_LocalRotation: {x: -0, y: -0, z: 0.00030148934, w: 1}
-  m_LocalPosition: {x: -10969, y: 540, z: 24.699}
+  m_LocalPosition: {x: -10969, y: 560, z: 24.699}
   m_LocalScale: {x: -910.1023, y: 49.794144, z: 0.15839462}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4506,7 +4493,7 @@ GameObject:
   - component: {fileID: 2061207830}
   m_Layer: 6
   m_Name: Ground (6)
-  m_TagString: Player
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

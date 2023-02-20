@@ -334,15 +334,15 @@ RectTransform:
   m_GameObject: {fileID: 428143819}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.2287, y: 5.2287, z: 5.2287}
+  m_LocalScale: {x: 1.1833006, y: 1.1833006, z: 1.1833006}
   m_Children: []
   m_Father: {fileID: 308231229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -642}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -67, y: -1908}
+  m_SizeDelta: {x: 881.8901, y: 1552.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &428143821
 MonoBehaviour:
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCredit: {fileID: 428143820}
-  movement: {x: 0, y: 0, z: 0}
+  movement: {x: 0, y: 500, z: 0}
 --- !u!114 &428143822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,37 +380,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 100
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 100
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Doors
-
-
-    gma-e by radea-h
-
-
-
-    monstewr
-
-    mons-ter
-
-
-    people
-
-
-    c-t-girls-
-
-
-    the
-    end,'
+  m_Text: "My canvas \n\nARTISTS \n\nMADLEN\n\nKATIE\n\nPROGRAMER \n\nRADEAH\n\nMUSIC
+    \n\nKATIE\n\nDULIPA\n\nHOPE YOU ENJOY\n"
 --- !u!222 &428143823
 CanvasRenderer:
   m_ObjectHideFlags: 0

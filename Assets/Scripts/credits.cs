@@ -10,6 +10,6 @@ public class credits : MonoBehaviour
 
     void Update()
     {
-        
+        myCredit.position += movement * Time.deltaTime;
     }
 }
